@@ -1,0 +1,60 @@
+.masukan {
+    position: relative;
+   
+  }
+  
+  input {
+    border: none;
+    outline: none;
+    padding: 0.75rem;
+    font-size: 1.5rem;
+    width: 100%;
+  }
+  
+  .overflow-hidden {
+    overflow: hidden;
+  }
+  .effect-2 {
+    border-bottom: 2px solid #ccc;
+    padding-left: 0;
+  }
+  
+  .effect-2 + .border {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 0%;
+    height: 2px;
+    background-color: #287ae6;
+    transition: 0.5s;
+  }
+  
+  .effect-2:focus + .border {
+    width: 100%;
+  }
+  .effect-5 {
+    border-bottom: 2px solid #ccc;
+    padding-left: 0;
+  }
+  
+  .effect-5 + label {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    color: #ccc;
+    transition: 0.4s;
+  }
+  
+  .effect-5:focus {
+    border-color: #287ae6;
+  }
+  
+  .effect-5:focus + label,
+  .effect-5:not(:placeholder-shown) + label {
+    top: 0;
+    transition: 0.3s;
+    background-color: #fff;
+    color: #287ae6;
+  }
+  
